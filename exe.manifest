@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<dependency>
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="X86"
+            publicKeyToken="6595b64144ccf1df"
+            language="*"
+        />
+    </dependentAssembly>
+</dependency>
+  <file name="PartsDirList.ocx">
+    <comClass clsid="{2AABBB95-6D02-463D-98E5-C007EE40B49B}" tlbid="{C7086E7D-BE05-4AE0-B54E-27D3C61B6B5F}" description="PartsDirList Control" threadingModel="Apartment" progid="PARTSDIRLIST.PartsDirListCtrl">
+      <progid>PARTSDIRLIST.PartsDirListCtrl.1</progid>
+    </comClass>
+    <typelib tlbid="{C7086E7D-BE05-4AE0-B54E-27D3C61B6B5F}" version="1.0" helpdir=""></typelib>
+  </file>
+</assembly>
