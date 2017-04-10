@@ -390,7 +390,8 @@ LRESULT CALLBACK WndProc(HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam)
 		hButton2=CreateWindow(TEXT("BUTTON"),TEXT("V‹K(&N)..."),WS_VISIBLE|WS_CHILD|WS_TABSTOP,0,0,0,0,hWnd,(HMENU)ID_NEW,((LPCREATESTRUCT)lParam)->hInstance,0);
 		hButton3=CreateWindow(TEXT("BUTTON"),TEXT("•ÒW(&E)..."),WS_VISIBLE|WS_CHILD|WS_TABSTOP|WS_DISABLED,0,0,0,0,hWnd,(HMENU)ID_EDIT,((LPCREATESTRUCT)lParam)->hInstance,0);
 		hButton4=CreateWindow(TEXT("BUTTON"),TEXT("íœ(&D)"),WS_VISIBLE|WS_CHILD|WS_TABSTOP|WS_DISABLED,0,0,0,0,hWnd,(HMENU)ID_DELETE,((LPCREATESTRUCT)lParam)->hInstance,0);
-		hStatic=CreateWindow(TEXT("STATIC"),TEXT("Ver : ")TEXT(__DATE__),WS_VISIBLE|WS_CHILD|WS_DISABLED|SS_RIGHT,0,0,0,0,hWnd,0,((LPCREATESTRUCT)lParam)->hInstance,0);
+		hStatic=CreateWindow(TEXT("STATIC"),TEXT("Ver : ")
+			TEXT(__DATE__),WS_VISIBLE|WS_CHILD|WS_DISABLED|SS_RIGHT,0,0,0,0,hWnd,0,((LPCREATESTRUCT)lParam)->hInstance,0);
 		SendMessage(hList,WM_SETFONT,(WPARAM)hFont,0);
 		SendMessage(hButton1,WM_SETFONT,(WPARAM)hFont,0);
 		SendMessage(hButton2,WM_SETFONT,(WPARAM)hFont,0);
